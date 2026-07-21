@@ -1,0 +1,296 @@
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+img {
+    vertical-align: bottom;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    padding: 0;
+}
+.container {
+    max-width: 1780px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+.header {
+    font-size: 0.9em;
+    background: #000;
+}
+.header a {
+    color: #fff;
+}
+.header > .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* ヘッダーナビ */
+.area_nav_header {
+    margin-left: auto;
+}
+.list_nav_header {
+    display: flex;
+    align-items: center;
+    border-right: solid 1px #fff;
+}
+.list_nav_header  a {
+    padding: 0 20px;
+    border-left: solid 1px #fff;
+}
+.list_nav_header  a:hover {
+    color: #000;
+    background: #eee;
+}
+/* エリアホーム */
+[class*="area_home"] {
+    padding: 65px;
+    border-bottom: solid 3px #ccc;
+}
+[class*="area_home"] > .container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head_home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.head_home  .ttl {
+    font-size: 2.5em;
+    position: relative;
+    margin-bottom: 10px;
+}
+.english {
+    margin: 0;
+}
+
+.head_home  .ttl::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* メンバー 用*/
+    background-color: #8000ff;
+}
+
+.body_home {
+    padding: 60px 0;
+}
+.body_home  .ttl {
+    font-size: 1.3em;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.body_home  .ttl::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+
+/* MEMBERS */
+.area_home_members ul {
+    border-bottom: solid 2px #ccc;
+    margin: 0;
+    padding: 0;
+}
+.area_home_members a {
+    padding-right: 50%;
+}
+.area_home_members a:hover {
+    color: #1900ff;
+    font-weight: 400;
+}
+.body_home img {
+    width: 40%;
+}
+/* 教員 */
+.list_teacher {
+    text-align: center;
+}
+.list_teacher a {
+    padding:0;
+    margin:0
+}
+/* フッター */
+.footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.area_lab_sign_footer {
+    padding-top: 30px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:1024px){
+    body {
+        font-size:16px
+    }
+}
+@media screen and (max-width:768px){
+    body {
+        font-size:16px
+    }
+    .container {
+        max-width: 1780px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    /* エリアホーム */
+    [class*="area_home"] {
+        padding: 45px 10px;
+        border-bottom: solid 3px #ccc;
+    }
+    .head_home  .ttl {
+        font-size: 1.5em;
+    }
+    .body_home {
+        padding: 40px 0;
+    }
+}
+@media screen and (max-width:480px){
+    body {
+        font-size:14px
+    }
+    .container {
+        max-width: 1780px;
+        padding: 0 0 0 10px;
+        margin: 0 auto;
+    }
+    .area_top_view .ttl {
+        font-size: 2em;
+        margin: 0;
+    }
+    /* エリアホーム */
+    [class*="area_home"] {
+        padding: 20px 0;
+        border-bottom: solid 3px #ccc;
+    }
+    .head_home  .ttl {
+        font-size: 1.25em;
+    }
+    .head_home  .ttl::after {
+        height: 3px;
+    }
+    /* メンバー */
+    .area_home_members .body_home {
+        padding-top: 30px;
+    }
+    /* フッター */
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /* ヘッダー */
+    .header > .container {
+        height: 40px;
+    }
+    .area_nav_header {
+        display: none;
+    }
+}
+
+/* ハンバーガーメニュー */
+/* PCでは非表示にしておく */
+.nav_toggle {
+    margin-left: auto;
+}
+.nav_toggle,
+.nav {
+display: none;
+}
+
+/* スマホサイズで見た場合のスタイル */
+@media screen and (max-width: 550px) {
+/* ハンバーガーのマーク */
+.nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    z-index: 2;
+}
+.nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.nav_toggle i:nth-child(1) {
+    top: 0;
+}
+.nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
+
+/* クリックされた後のハンバーガーのマーク */
+.nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+    background: #000;
+}
+.nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+    background: #000;
+}
+
+/* クリックで表示されるメニュー：クリックされる前 */
+.nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    background: #fff;
+    z-index: 1;
+}
+.nav_menu_li {
+    margin-bottom: 30px;
+}
+.nav_menu_li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* クリックで表示されるメニュー：クリックされた後 */
+.nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+}

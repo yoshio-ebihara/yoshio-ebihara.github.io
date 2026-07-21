@@ -1,0 +1,207 @@
+<head>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" }},
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { matchFontHeight: false },
+    displayAlign: "left",
+    displayIndent: "2em"
+  });
+</script>
+</head>
+
+<BODY BACKGROUND="JPG/b018.jpg" TEXT=#000000 LINK=#0000ff ALINK=#ffaaaa VLINK=#ff0000> 
+<HR>
+<H1>  
+<center>  <font size="6">IFAC WC 2026 Open Invited Track </font></center><p>
+    <center><FONT COLOR="blue" size="8" face="arial">"LMIs and S-variable Approach in Control"</Font></center>
+    <center><FONT COLOR="blue" size="6" face="arial">code: df36u</Font></center>
+</H1>
+<H2>
+  <center>Organizers: 
+    Dimitri Peaucelle$^{1}$ and Yoshio Ebihara$^2$
+  </center>
+<center>$^1$ LAAS-CNRS, Univ. Toulouse, CNRS, Toulouse, France,</center>
+<center>$^2$ Kyushu University, Japan</center>
+<p>
+</H2>
+  <center><font color="blue" face="arial" size="4">
+      This web page will be updated in accordance with helpful comments from possible contributors to the OIT!!</font></center>
+  <center><font color="blue" face="arial" size="4">
+      You are invited to contact the organizers of the track for any suggestion. </font></center>
+  <HR>
+  
+  <center><H2>Abstract</H2></center>
+  <font face="arial" size="4">
+This Open Invited Track proposal aims at gathering contributions where LMI results for control problems make
+the usage of the ''S-variable approach", which has many other names in the literature among which: ''dilated LMIs",
+''extended LMIs",  ''Finsler lemma based", ''Descriptor approach" are some of these. This approach has had a significant
+impact on the Robust control field for 25 years and is still widely used for many control problems such as the
+analysis of systems with uncertainties, TS-fuzzy systems, linear systems with non-linearities, time-varying systems,
+parameter-varying systems and well as for control design ranging from state-feedback, observer design and outputdesign.
+The Open Invited Track will give the opportunity to gather in joint session(s) various viewpoints on the usage
+of this technique, its advantages but also the drawbacks and how to circumvent these. Contributions aiming at relating
+the S-variable approach with closely related techniques such as the Integral Quadratic Constraints framework, the
+KYP-lemma, Lagrange relaxations, Lyapunov theory, Sum-of-Squares and others, are of high interest. Both theoretical
+and application papers are most welcome.<p>
+<b>Keywords:</b>  S-variable approach, Finsler's lemma, Dilated LMIs, Extended LMIs, Descriptor approach, Polytopic
+uncertainties, TS-fuzzy systems, Robustness, LPV control, Time-varying systems, Time-delay systems, Descriptor
+systems, Analysis, State-feedback, Observers, Output-feedback
+</font>
+<HR>
+
+  <center><H2>Detailed Description</H2></center>
+  <font face="arial" size="4">
+The robust control field has benefitted widely in the past 35 years of the fantastic flexibility and efficiency of Linear
+Matrix Inequality (LMI) based formulations [1, 6]. Among the several techniques employed to derive results in
+the form of LMIs one can mention the Lyapunov theory which naturally leads to inequality conditions that have a
+matrix formulations, as well the Integral Quadratic Constraints (IQCs) framework which combined to the
+Kalman-Yakubovich-Popov lemma offers wide declinations for systems represented as a feedback loop of a linear plant with
+some operator. A complementary approach has emerged after the publication [4] which provided new kind of LMIs
+for a specific problem. Since then, many authors have exploited similar methodologies which in all cases amount to
+increase the dimensions of the LMIs (both in the number of variables and the size of the constraints) with the benefit of
+bringing useful degrees of freedom to the original conservative formulation. As soon as [17] and in [20] it was shown
+that the technique is related to Finsler's lemma that states the equivalence of the two following matrix inequalities<p>
+<center>
+$
+M^{\perp T}QM^\perp\prec 0 \quad \Leftrightarrow \quad \exists S \,:\, Q\prec SM+M^T S^T. 
+$
+</center><p>
+While that lemma was already adopted for building LMIs, it was, until then, used as a projection lemma allowing
+to reduce the dimensions of the constraints: remove the $S$ variable by projection onto the null space $M^\perp$ of $M$.
+As shown with many examples in [5] the converse creation of the $S$ variable provides many advantages and can been seen
+as more than a technical ''trick".<p>
+
+<b>Descriptor. </b>Among important implications of this S-variable approach is the fact that it allows dealing with
+descriptor forms. This is witnessed as soon as [3], [8] and can be summarized by the following formulation of that
+same result
+<center>
+$
+\begin{bmatrix} \dot x \\ x\end{bmatrix}^T
+Q
+\begin{bmatrix} \dot x \\ x\end{bmatrix}\le 0
+\quad \forall
+\begin{bmatrix} -E & A \end{bmatrix}
+\begin{bmatrix} \dot x \\ x\end{bmatrix}=0
+\quad \Leftrightarrow \quad 
+\exists S \,:\, Q\prec S\begin{bmatrix} -E & A \end{bmatrix}+\begin{bmatrix} -E & A \end{bmatrix}^TS^T.
+$
+</center><p>
+This fact not only enables to consider truly descriptor systems described by differential algebraic equations [13], but
+allows to manipulate with ease models containing polynomial and rational expressions in the states or the parameters
+as if being affine functions [3, 18, 29, 2].<p>
+
+<b>Feedback design.</b> Without giving any final answer to the open problem of feedback design, for which there are
+systematic methods only in special cases, the S-variable approach has proved to bring efficient heuristics [24]. It has
+led to many recent results such as in [22, 7, 23, 11] and comparisons to other techniques [9, 26].<p>
+      
+But these are only some examples of the impact of S-variable approach to the issue of building understandable
+efficient LMI results. From the recent literature one can see that the approach continues to feed many contributions
+among which some tackle the fundamentals of the approach itself [25, 12, 15], others employ the technique for
+problems outside of the strict robust control framework as in [27] for data-driven control, in [14] for model predictive
+control, in [16, 21] for linear parameter varying control, in [2] for regional stabilization of non-linear systems or
+[28] for fault-tolerant control. While papers such as [10, 26] provide most interesting examples of concrete impact on
+applications.<p>
+      
+The Open Invited Track aims at gathering all such contributions dealing with this highly present approach among
+LMI results for control problems. It may be an opportunity to acknowledge its benefits / drawbacks, and clarify the
+remaining open issues.
+</font>
+
+<HR>
+
+<center><H2>References</H2></center>
+<font face="arial" size="4">
+[1] S. Boyd, L. El Ghaoui, E. Feron, and V. Balakrishnan. Linear Matrix Inequalities in System and Control Theory.
+SIAM Studies in Applied Mathematics, Philadelphia, 1994.
+<p>
+[2] D. Coutinho, C.E. de Souza, J. M. Gomes da Silva Jr., A.F. Caldeira, and C. Prieur. Regional stabilization of
+input-delayed uncertain nonlinear polynomial systems. IEEE Transactions on Automatic Control, 65(5):2300-2307, May 2020.
+<p>
+[3] D. Coutinho, A. Trofino, and M. Fu. Guaranteed cost control of uncertain nonlinear systems via polynomial
+Lyapunov functions. IEEE Trans. Automatic Control, 47(9):1575-1580, 2002.
+<p>
+  [4] M.C. de Oliveira, J. Bernussou, and J.C. Geromel. A new discrete-time stability condition. Systems & Control Letters, 37(4):261-265, July 1999.
+  <p>
+    [5] Y. Ebihara, D. Peaucelle, and D. Arzelier. S-Variable Approach to LMI-Based Robust Control. Elsevier, 2015.
+    <p>
+      [6] L. El Ghaoui and S.-I. Niculescu, editors. Advances in Linear Matrix Inequality Methods in Control. Advances in Design and Control. SIAM, Philadelphia, 2000.
+      <p>
+	[7] Alexandre Felipe and Ricardo CLF Oliveira. An LMI-based algorithm to compute robust stabilizing feedback gains directly as optimization variables. IEEE Transactions on Automatic Control, 66(9):4365-4370, 2020.
+	<p>
+	  [8] E. Fridman and U. Shaked. A descriptor system approach to H-infinity control of time-delay systems. IEEE Trans. on Automat. Control, 47:253-270, 2002.
+	  <p>
+	    [9] T. Holicki and C.W. Scherer. Revisiting and generalizing the dual iteration for static and robust output-feedback synthesis. International Journal of Robust and Nonlinear Control, 31(11):5427-5459, 2021.
+	    <p>
+[10] Gustavo Guilherme Koch, Lucas Borin, Caio Os´orio, Mokthar Aly, Margarita Norambuena, Jose Rodriguez, Fernanda Carnieluti, Humberto Pinheiro, Ricardo CLF Oliveira, and Vin´ıcius F Montagner. Improved control of grid-connected converters from strong to very weak conditions integrating more effective lmis and c-hil.
+Available at SSRN 5352987.
+<p>
+[11] Dario Giuseppe Lui, Alberto Petrillo, and Stefania Santini. Linear matrix inequality-based design of distributed
+proportional-integral-derivative for the output consensus tracking in heterogeneous high-order multi-agent systems.
+Asian Journal of Control, 2025.
+<p>
+[12] T.J. Meijer, T. Holicki, S. van den Eijnden, C.W. Scherer, and WPMH Heemels. The non-strict projection lemma.
+IEEE Transactions on Automatic Control, 69(8):5584-5590, 2024.
+<p>
+  [13] Tomas Jesse Meijer. Estimation and control for discrete-time parameter-varying and descriptor systems. 2024.
+  <p>
+[14] Marcelo M Morato, Tobias Holicki, and CarstenWScherer. Stabilizing model predictive control synthesis using
+integral quadratic constraints and full-block multipliers. International Journal of Robust and Nonlinear Control,
+33(18):11434-11457, 2023.
+<p>
+[15] H-N Nguyen. Parameterised ellipsoid and its applications to s-lemma and control of uncertain, time-varying
+linear systems. International Journal of Control, pages 1-15, 2025.
+<p>
+[16] Lucas A.L. Oliveira, Kevin Guelton, Koffi M.D. Motchon, and Valter J.S. Leite. New negative definiteness
+conditions for quadratic functions with illustration in LPV sampled-data control. Automatica, 173:112077, 2025.
+<p>
+[17] D. Peaucelle, D. Arzelier, O. Bachelier, and J. Bernussou. A new robust D-stability condition for real convex
+polytopic uncertainty. Systems & Control Letters, 40(1):21-30, May 2000.
+<p>
+[18] D. Peaucelle and M. Sato. LMI tests for positive definite polynomials: Slack variable approach. Technical Report
+07452, LAAS-CNRS, Toulouse, August 2007. Extended version of [19].
+<p>
+[19] D. Peaucelle and M. Sato. LMI tests for positive definite polynomials: Slack variable approach. IEEE Trans. on
+Automat. Control, 54(4):886 - 891, April 2009.
+<p>
+[20] G. Pipeleers, B. Demeulenaere, J. Swevers, and L. Vandenberghe. Extended LMI characterizations for stability
+and performance of linear systems. Systems & Control Letters, 58(7):510 - 518, 2009.
+<p>
+[21] P. Polcz, T. P´eni, B. Kulcsar, and G. Szederkenyi. Induced L2-gain computation for rational LPV systems using
+Finsler's lemma and minimal generators. Systems & Control Letters, 142, 2020.
+<p>
+[22] Gabriela L. Reis, Rodrigo F. Ara´ujo, Leonardo A. B. Torres, and Reinaldo M. Palhares. Regional static output
+feedback stabilization based on polynomial lyapunov functions for a class of nonlinear systems. Journal of
+Control, Automation and Electrical Systems, 35(4):601-613, 2024.
+<p>
+[23] LA Rodrigues, RCLF Oliveira, and JF Camino. Parameterized LMIs for robust and state feedback control of
+continuous-time polytopic systems. International Journal of Robust and Nonlinear Control, 28(3):940-952,
+2018.
+<p>
+[24] M.S. Sadabadi and D. Peaucelle. From static output feedback to structured robust static output feedback: A
+survey. Annual Reviews in Control, 42:11-26, 2016.
+<p>
+[25] M Sato and N Sebe. A variant of extended lmi: Performance analysis with static multiplier for discrete-time
+lifted systems. IFAC-PapersOnLine, 56(2):5825-5830, 2023.
+<p>
+[26] Daam Schoon and Spilios Theodoulis. Review of H-infinity static output feedback controller synthesis methods for
+fighter aircraft control. In AIAA SCITECH 2025 Forum, page 2241, 2025.
+<p>
+[27] Alexandre Seuret, Carolina Albea, and Francesco Gordillo. Linear matrix inequality relaxations and its application
+to data-driven control design for switched affine systems. International Journal of Robust and Nonlinear
+Control, 33(12):6597-6618, 2023.
+<p>
+[28] Hibiki Shiroiwa, Hiroyuki Ichihara, and Masayuki Sato. Fault-tolerant control using recursive gaussian processes
+and observer-structured robust output feedback controller. IET Control Theory & Applications, 19(1):e70058,
+2025.
+<p>
+[29] A. Trofino and T.J.M. Dezuo. LMI stability conditions for uncertain rational nonlinear systems. International
+Journal of Robust and Nonlinear Control, 2013.
+</font>
+<HR>

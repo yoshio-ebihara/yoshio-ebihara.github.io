@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./members.css">
+    <title>MEMBERS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="area_lab_name_header">
+                <a href="./index-j.html">EBIHARA LAB</a>
+            </div>
+            <nav class="area_nav_header">
+                <ul class="list_nav_header">
+                    <li>
+                        <a href="./index-j.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a href="./study-j.html">STUDY</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ハンバーガーメニュー -->
+            <!-- クリックする３本線の部分 -->
+            <span class="nav_toggle">
+                <i></i>
+                <i></i>
+                <i></i>   
+            </span>
+            <!-- クリックで表示されるメニュー -->
+            <nav class="nav">
+                <ul class="nav_menu_ul">
+                    <li class="nav_menu_li"><a href="./index-j.html">HOME</a></li>
+                    <li class="nav_menu_li"><a href="./members-j.html">MEMBERS</a></li>
+                    <li class="nav_menu_li"><a href="./study-j.html">STUDY</a></li>
+                </ul>
+            </nav>
+            <script src="./js/jquery-3.6.3.min.js" ></script>
+            <script>
+                $(".nav_toggle").on("click", function () {
+                $(".nav_toggle, .nav").toggleClass("show");
+                });
+            </script>
+        </div>
+    </header>
+    <main>
+        <section class="area_home_members">
+            <div class="container">
+                <div class="div_home">
+                    <div class="head_home">
+                        <div>
+                            <p class="ttl">MEMBERS</p>
+                        </div>
+                    </div>
+                    <div class="body_home">
+                        <div>
+                            <p class="ttl">教員</p>
+                            <ul class="list_teacher">
+                                <li><p>教授</p></li>
+                                <img src="./imgs/Prof_Ebihara.jpg" alt="">
+                                <li><a href="https://ctrl.ees.kyushu-u.ac.jp/~ebihara/index-j.html">蛯原 義雄</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="ttl">学生</p>
+                            <ul>
+                                <li><p>M2</p></li>
+                                <li>堺　 美樹</li>
+                                <li>本岡 駿人</li>
+                                <li>藤井 達希</li>
+                            </ul>
+                            <ul>
+                                <li><p>M1</p></li>
+                                <li>堺　 美樹</li>
+                                <li>本岡 駿人</li>
+                                <li>藤井 達希</li>
+                            </ul>
+                            <ul>
+                                <li><p>B4</p></li>
+                                <li>堺　 美樹</li>
+                                <li>本岡 駿人</li>
+                                <li>藤井 達希</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="area_lab_sign_footer">
+                <p>2023 Ebihara Laboratory All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

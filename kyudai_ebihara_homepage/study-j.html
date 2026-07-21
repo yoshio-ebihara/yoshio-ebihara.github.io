@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./study.css">
+    <title>STUDY</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="area_lab_name_header">
+                <a href="./index-j.html">EBIHARA LAB</a>
+            </div>
+            <nav class="area_nav_header">
+                <ul class="list_nav_header">
+                    <li>
+                        <a href="./index-j.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./members-j.html">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a href="">STUDY</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ハンバーガーメニュー -->
+            <!-- クリックする３本線の部分 -->
+            <span class="nav_toggle">
+                <i></i>
+                <i></i>
+                <i></i>   
+            </span>
+            <!-- クリックで表示されるメニュー -->
+            <nav class="nav">
+                <ul class="nav_menu_ul">
+                    <li class="nav_menu_li"><a href="./index-j.html">HOME</a></li>
+                    <li class="nav_menu_li"><a href="./members-j.html">MEMBERS</a></li>
+                    <li class="nav_menu_li"><a href="./study-j.html">STUDY</a></li>
+                </ul>
+            </nav>
+            <script src="./js/jquery-3.6.3.min.js" ></script>
+            <script>
+                $(".nav_toggle").on("click", function () {
+                $(".nav_toggle, .nav").toggleClass("show");
+                });
+            </script>
+        </div>
+    </header>
+    <main>
+        <section class="area_home_study">
+            <div class="container">
+                <div class="div_home">
+                    <div class="head_home">
+                        <div>
+                            <p class="ttl">STUDY</p>
+                        </div>
+                    </div>
+                    <div class="body_home">
+                        <div>
+                            <p>まだコンテンツがありません</p>
+                        </div>                          
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="area_lab_sign_footer">
+                <p>2023 Ebihara Laboratory All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
