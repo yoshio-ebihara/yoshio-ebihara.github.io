@@ -1,110 +1,192 @@
-<BODY BACKGROUND="JPG/b018.jpg" TEXT=#000000 LINK=#0000ff ALINK=#ffaaaa VLINK=#ff0000> 
-<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
-<HR>
-<FONT COLOR="green">現在の研究テーマ</FONT>
-<UL>
-<LI>
-順伝播型ニューラルネットワークの厳密なモデル低次元化
-</LI>
-<p>
-<LI>
-錐計画に基づく順伝播型ニューラルネットワークの Lipschitz 定数の計算
-</LI>
-<p>
-<LI>
-錐計画に基づく再帰型ニューラルネットワークの安定性解析と最適設計
-</LI>
-<p>
-<LI>
-共正値計画に基づく非線形ダイナミカルシステムの解析と設計
-</LI>
-</UL>
-<p>
-<HR>
-<FONT COLOR="green">過去の研究テーマ</FONT>
-<UL>
-<LI>
-非負システムに対するH2最適制御器設計
-</LI>
-<p>
-<LI>
-LMIを用いた達成可能な性能限界の解析
-</LI>
-<p>
-<LI>
-むだ時間を有する非負システムの解析と設計
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-大規模結合非負システムの安定性とパーシステンス性解析
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-非負システムのL1誘導ノルムの解析と設計
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-LMIを用いた制御系の解析と設計
-</LI>
-<p>
-<LI>
-離散時間系に対するメモリー型周期時変制御器の設計
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-パラメータ依存LMIに基づくロバスト制御系の解析と設計
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-Generalized S-procedureを用いた線形システムの解析
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-離散時間2-Dシステムの安定性解析
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-有限次元線形時不変系のモデル低次元化
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-伸張型LMI(Dilated LMI)を用いたロバスト制御系の設計，および制御性能の解析
-</LI>
-</UL>
-<p>
-<UL>
-<LI>
-LMI非共通解を用いた多目的制御系設計問題の解法
-</LI>
-<p>
-<LI>
-多変数最適制御系の逐次調整法
-</LI>
-<p>
-<LI>
-単純適応制御(SAC)におけるPFCの実用的な設計法について
-</LI>
-</UL>
-<HR>
-<A HREF="achievements-j.html"><FONT COLOR="blue">List of Publications and Professional Activities</FONT></A>
-<HR>
-指導に携わらせて頂いた学生さんの受賞リストは<A HREF="./PDF/award-student.pdf"><FONT COLOR="blue">こちら</FONT></A>
-<HR> 
-<A HREF="index-j.html"><FONT COLOR="blue">ホームページへ</FONT></A>
-<HR>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究テーマ・実績</title>
+    <style>
+        :root {
+            --primary-color: #1b4d3e;      /* 上品で落ち着いたダークグリーン */
+            --accent-color: #2a7b62;       /* 見出し用アクセントグリーン */
+            --bg-color: #f8faf9;           /* 目に優しい背景色 */
+            --card-bg: #ffffff;            /* カードの背景 */
+            --text-color: #2b2d42;         /* 読みやすいダークグレー */
+            --border-color: #e2e8f0;       /* 境界線 */
+            --link-color: #0d6efd;         /* モダンなブルー */
+            --link-hover-color: #0a58ca;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 箇条書き用のモダンなドットアイコン */
+        li::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .link-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .nav-button {
+            display: block;
+            background-color: var(--card-bg);
+            color: var(--link-color);
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            text-align: center;
+        }
+
+        .nav-button:hover {
+            background-color: #f1f5f9;
+            color: var(--link-hover-color);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+            .section-card {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .section-title {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 現在の研究テーマ -->
+    <section class="section-card">
+        <h2 class="section-title">現在の研究テーマ</h2>
+        <ul>
+            <li>順伝播型ニューラルネットワークの厳密なモデル低次元化</li>
+            <li>錐計画に基づく順伝播型ニューラルネットワークの Lipschitz 定数の計算</li>
+            <li>錐計画に基づく再帰型ニューラルネットワークの安定性解析と最適設計</li>
+            <li>共正値計画に基づく非線形ダイナミカルシステムの解析と設計</li>
+        </ul>
+    </section>
+
+    <!-- 過去の研究テーマ -->
+    <section class="section-card">
+        <h2 class="section-title">過去の研究テーマ</h2>
+        <ul>
+            <li>非負システムに対する H₂ 最適制御器設計</li>
+            <li>LMI を用いた達成可能な性能限界の解析</li>
+            <li>むだ時間を有する非負システムの解析と設計</li>
+            <li>大規模結合非負システムの安定性とパーシステンス性解析</li>
+            <li>非負システムの L₁ 誘導ノルムの解析と設計</li>
+            <li>LMI を用いた制御系の解析と設計</li>
+            <li>離散時間系に対するメモリー型周期時変制御器の設計</li>
+            <li>パラメータ依存 LMI に基づくロバスト制御系の解析と設計</li>
+            <li>Generalized S-procedure を用いた線形システムの解析</li>
+            <li>離散時間 2-D システムの安定性解析</li>
+            <li>有限次元線形時不変系のモデル低次元化</li>
+            <li>伸張型 LMI (Dilated LMI) を用いたロバスト制御系の設計，および制御性能の解析</li>
+            <li>LMI 非共通解を用いた多目的制御系設計問題の解法</li>
+            <li>多変数最適制御系の逐次調整法</li>
+            <li>単純適応制御 (SAC) における PFC の実用的な設計法について</li>
+        </ul>
+    </section>
+
+    <!-- 関連リンク -->
+    <nav class="link-nav">
+        <a href="achievements-j.html" class="nav-button">List of Publications and Professional Activities</a>
+        <a href="./PDF/award-student.pdf" class="nav-button" target="_blank" rel="noopener">指導に携わらせて頂いた学生さんの受賞リストはこちら (PDF)</a>
+        <a href="index-j.html" class="nav-button">ホームページへ戻る</a>
+    </nav>
+
+</div>
+
+</body>
+</html>

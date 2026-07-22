@@ -1,215 +1,260 @@
-<!--<BODY charset="ISO-8859-1" BACKGROUND="JPG/b018.jpg" TEXT=#000000 LINK=#0000ff ALINK=#ffaaaa VLINK=#ff0000> 
-<font face="Times New Roman">
-<font size="4">
-<BODY charset="ISO-8859-1" BACKGROUND="JPG/b018.jpg" TEXT=#000000 LINK=#0000ff ALINK=#ffaaaa VLINK=#ff0000> 
--->
-<BODY BACKGROUND="JPG/b018.jpg" TEXT=#000000 LINK=#0000ff ALINK=#ffaaaa VLINK=#ff0000> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoshio Ebihara - Kyushu University</title>
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #0056b3;
+            --text-color: #2b2d42;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --accent-bg: #eff6ff;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-<HR>
-<H1>Yoshio Ebihara</H1>
-<UL>
-<LI>
-  Professor,
-<A HREF="https://ctrl.ees.kyushu-u.ac.jp/en/index.html"><FONT COLOR="blue">
-Mathematical Systems Theory Laboratory</FONT></A>,&nbsp 
-  <A HREF="https://www.isee.kyushu-u.ac.jp/e/">
-<FONT COLOR="blue">
-Graduate School of Information Science and Electrical Engineering</FONT></A>,&nbsp  
-<A HREF="http://www.kyushu-u.ac.jp/en/"><FONT COLOR="blue">Kyushu University</FONT></A>
-</LI>
-</UL>
-<HR>
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
 
-<H2>International Research Projects</H2>
-<UL>
-<img src="logo_ENG.jpg" alt="photo" width="420" align="right">
-  <LI>  Principal Investigator, <FONT COLOR="blue"><a href="https://www.jst.go.jp/aspire/en/about_en.html">JST ASPIRE for Top Scientists,</a></FONT> December 2024- March 2030.<br>
-    Japan Science and Technology Agency (JST), 
-  Adopting Sustainable Partnerships for Innovative Research Ecosystem (ASPIRE) for Top Scientists, <br>
-    "Building Mathematical Foundation for Cyber Physical Dynamical Systems:<br>
-    Interdisciplinary Research and Human Resource Development on Control with Prediction and Learning."  <br>
-<UL> <LI>  Press Release on December 2, 2024, can be found <FONT COLOR="blue"><a href="https://www.jst.go.jp/pr/info/info1737/index_e.html">here</a></FONT>.  
-  </LI>
-</UL>
-</LI>
-</UL>
-<HR>
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
 
-<H2>International Activities</H2>
-<UL>
-<LI> Elected Member, 
-  <A HREF="http://ieeecss.org/committee/board-of-governors"> <FONT COLOR="blue">
-      IEEE CSS Board of Governors,</FONT></A> 2022-2024 
-</LI>
-<p>
-<LI> IPC Co-Chair, 
-  <A HREF="https://www.ifac2023.org/"> <FONT COLOR="blue">
-      The 22nd IFAC World Congress 2023</FONT></A> 
-</LI>
-<p>
-<LI> General Chair, 
- <A HREF="https://www.sciencedirect.com/journal/ifac-papersonline/vol/55/issue/25"> <FONT COLOR="blue"> 
-      The 10th IFAC Symposium on Robust Control Design ROCOND 2022 </FONT></A> 
-</LI>
-<p>
-<LI> Publication Co-Chair, 
- <A HREF="https://ieeexplore.ieee.org/xpl/conhome/9137088/proceeding"> <FONT COLOR="blue"> 
-   European Control Conference 2020  </FONT></A> 
-</LI>
-<p>
-<LI> Chair, 
-  <A HREF="http://ieeecss.org/technical-committee/robust-complex-systems"> <FONT COLOR="blue">
-      IEEE Control Systems Society Technical Committee on Robust and Complex Systems,</FONT></A> 2019-2023
-</LI>
-<p>
-<LI> <A HREF="ws.html"><FONT COLOR="blue">List of International Symposia/Workshops Organized/Co-Organized by Ebihara </FONT></A>
-</LI>
-</UL>
-  <HR>
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+        }
 
- <H2>Keynote/Tutorial Talks</H2>
- <UL>
-  <LI>
-    Tutorial Talk entitled "L1-Induced Norm Analysis of Positive Systems and Its Application to 
-    Stabilization of Large Scale Interconnected Positive Systems" at
- <A HREF="https://cdc2018.ieeecss.org/program.php"><FONT COLOR="blue"> 
-   The 57th IEEE Conference on Decision and Control,</FONT></A>  
-     Miami Beach, FL, USA, December 17-19, 2018
-  </LI>
-<p>
-  <LI>
-    Keynote Talk entitled "Control Synthesis Under Positivity Constraint: Beautiful Results and Challenging Issues" at
-    <A HREF="./WS/POSTA2018.pdf"><FONT COLOR="blue">
-    The 6th International Conference on Positive Systems (POSTA2018),</FONT></A> 
-    Hangzhou, China, August 25 to 27, 2018
-  </LI>
-</UL>
+        .title-info {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin: 0;
+        }
 
-  <HR>
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            font-size: 1.4rem;
+        }
 
-   <H2>Recent Special Events</H2>
- <UL>
-  <LI>
-  <A HREF="https://www.ifac2026.org/"> <FONT COLOR="blue">
-      The 23rd IFAC World Cogress,  August 28-28, 2026, Busan, Republic of Korea.</FONT></A><p>
-      In the IFAC WC 2026, D. Peaucelle and Y. Ebihara have made Open Invited Track (OIT) Proposal entitiled "LMIs and S-variable Approach in Control."
-      The details of the OIT proposal can be found <A HREF="IFACWC2026OIT.html"> <FONT COLOR="blue">
-     here.</FONT></A>  
-  </LI>
-   <!--
-  <LI>
-  <A HREF="https://cdc2025.ieeecss.org/"> <FONT COLOR="blue">
-      The 64th IEEE Conference on Decision and Control, December 10-12, 2025, Rio de Janeiro, Brazil.</FONT></A>
-  </LI>
-  <LI>
-  <A HREF="https://ecc24.euca-ecc.org/"> <FONT COLOR="blue">
-      The 22nd European Control Conference, Stockholm, Sweden, June 25 to 28, 2024</FONT></A>
-  </LI>
-  <p>
-<LI>
-  <A HREF="https://www.ifac2023.org/"> <FONT COLOR="blue">
-      The 22nd IFAC World Congress 2023</FONT></A> 
-</LI>
--->
-</UL>
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
 
-  <HR>
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
 
-<H2>Research Interests</H2>
-<H3>Reliability Verification of AI Algorithms and Neural Networks by Mathematical Systems Theory</H3>
-<UL>
-<LI>
-Exact Model Reduction of Feedforward Neural Networks.  
-</LI>
-<p>
-<LI>
-Lipschitz Constant Computation of Feedforward Neural Networks.  
-</LI>
-<p>
-<LI>
-Stability Analysis of Recurrent Neural Networks.  
-</LI>
-</UL>
-<H3>Analysis and Synthesis of Dynamical Systems Using Conic Programming</H3>
-<UL>
-<LI>
-O'Shea-Zames-Falb Multipliers for Idempotent Nonlinearities.  
-</LI>
-<p>
-<LI>
-Analysis and Synthesis of Nonlinear Dynamical Systems Using Copositive Programming.  
-</LI>
-</UL>
+        a:hover {
+            text-decoration: underline;
+        }
 
-<p>
-<H3>Past Topics</H3>
-<UL>
-<p>
-<LI>
-H2 State-Feedback Synthesis Under Positivity Constraint on the Closed-Loop Systems.  
-</LI>
-<p>
-<LI>
-Construction of Externally Positive Systems for LTI System Analysis.  
-</LI>
-<p>
-<LI>
-LMI-based Performance Limitations Analysis of H-infinity Control Systems.  
-</LI>
-<p>
-<LI>
-Analysis and Synthesis of Positive Systems with Time Delays.  
-</LI>
-<p>
-<LI>
-Stability and Persistence Analysis of Large-Scale Interconnected
-Positive Systems.  
-</LI>
-<p>
-<LI>
-L1-induced Norm Analysis and Synthesis of Positive Systems.  
-</LI>
-<p>
-<LI>
-Periodic Controller Synthesis for Discrete-Time Systems.  
-</LI>
-<p>
-<LI>
-Robust SDP/LMI.  
-</LI>
-<p>
-<LI>
-Linear System Analysis Using the Generalized S-procedure.  
-</LI>
-<p>
-<LI>
-Stability Analysis of 2-D Systems.  
-</LI>
-<p>
-<LI>
-Model Reduction for Finite-Dimensional Linear Time-Invariant Systems.  
-</LI>
-<p>
-<LI>
-Dilated-LMI-based Robust Control System Analysis and Synthesis.  
-</LI>
-<p>
-<LI>
-Multiobjective Control.  
-</LI>
-<p>
-<LI>
-Sequential Tuning Methods of LQI Servo Systems.  
-</LI>
-<p>
-</UL>
-<A HREF="achievements.html"><FONT COLOR="blue">List of publications and professional activities.  </FONT></A>
-<HR>
-<A HREF="index-j.html"><FONT COLOR="blue">Japanese version</FONT></A>
-</BODY>
-</HTML>
+        /* Responsive Layout for Project Card */
+        .project-card {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            background: var(--accent-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
 
+        .project-content {
+            flex: 1;
+        }
 
+        .project-img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
 
+        ul {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
 
+        li {
+            margin-bottom: 8px;
+        }
+
+        .sub-list {
+            list-style-type: circle;
+            margin-top: 4px;
+        }
+
+        .footer-nav {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .project-card {
+                flex-direction: column-reverse;
+            }
+            .project-img {
+                max-width: 100%;
+            }
+            .footer-nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Yoshio Ebihara</h1>
+        <p class="title-info">
+            Professor, 
+            <a href="https://ctrl.ees.kyushu-u.ac.jp/en/index.html">Mathematical Systems Theory Laboratory</a>, 
+            <a href="https://www.isee.kyushu-u.ac.jp/e/">Graduate School of Information Science and Electrical Engineering</a>, 
+            <a href="http://www.kyushu-u.ac.jp/en/">Kyushu University</a>
+        </p>
+    </header>
+
+    <main>
+        <!-- International Research Projects -->
+        <section>
+            <h2>International Research Projects</h2>
+            <div class="project-card">
+                <div class="project-content">
+                    <p><strong>Principal Investigator, <a href="https://www.jst.go.jp/aspire/en/about_en.html">JST ASPIRE for Top Scientists</a></strong>, December 2024 – March 2030.</p>
+                    <p>Japan Science and Technology Agency (JST), Adopting Sustainable Partnerships for Innovative Research Ecosystem (ASPIRE) for Top Scientists,<br>
+                    <em>"Building Mathematical Foundation for Cyber Physical Dynamical Systems: Interdisciplinary Research and Human Resource Development on Control with Prediction and Learning."</em></p>
+                    <ul class="sub-list">
+                        <li>Press Release on December 2, 2024, can be found <a href="https://www.jst.go.jp/pr/info/info1737/index_e.html">here</a>.</li>
+                    </ul>
+                </div>
+                <img src="logo_ENG.jpg" alt="ASPIRE Logo" class="project-img">
+            </div>
+        </section>
+
+        <!-- International Activities -->
+        <section>
+            <h2>International Activities</h2>
+            <ul>
+                <li>Elected Member, <a href="http://ieeecss.org/committee/board-of-governors">IEEE CSS Board of Governors</a>, 2022–2024</li>
+                <li>IPC Co-Chair, <a href="https://www.ifac2023.org/">The 22nd IFAC World Congress 2023</a></li>
+                <li>General Chair, <a href="https://www.sciencedirect.com/journal/ifac-papersonline/vol/55/issue/25">The 10th IFAC Symposium on Robust Control Design ROCOND 2022</a></li>
+                <li>Publication Co-Chair, <a href="https://ieeexplore.ieee.org/xpl/conhome/9137088/proceeding">European Control Conference 2020</a></li>
+                <li>Chair, <a href="http://ieeecss.org/technical-committee/robust-complex-systems">IEEE Control Systems Society Technical Committee on Robust and Complex Systems</a>, 2019–2023</li>
+                <li><a href="ws.html">List of International Symposia/Workshops Organized/Co-Organized by Ebihara</a></li>
+            </ul>
+        </section>
+
+        <!-- Keynote/Tutorial Talks -->
+        <section>
+            <h2>Keynote/Tutorial Talks</h2>
+            <ul>
+                <li>
+                    Tutorial Talk entitled <em>"L1-Induced Norm Analysis of Positive Systems and Its Application to Stabilization of Large Scale Interconnected Positive Systems"</em> at 
+                    <a href="https://cdc2018.ieeecss.org/program.php">The 57th IEEE Conference on Decision and Control</a>, Miami Beach, FL, USA, December 17–19, 2018.
+                </li>
+                <li>
+                    Keynote Talk entitled <em>"Control Synthesis Under Positivity Constraint: Beautiful Results and Challenging Issues"</em> at 
+                    <a href="./WS/POSTA2018.pdf">The 6th International Conference on Positive Systems (POSTA2018)</a>, Hangzhou, China, August 25–27, 2018.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Recent Special Events -->
+        <section>
+            <h2>Recent Special Events</h2>
+            <ul>
+                <li>
+                    <a href="https://www.ifac2026.org/">The 23rd IFAC World Congress</a>, August 23–28, 2026, Busan, Republic of Korea.
+                    <br>In the IFAC WC 2026, D. Peaucelle and Y. Ebihara have made an Open Invited Track (OIT) Proposal entitled <em>"LMIs and S-variable Approach in Control."</em> The details of the OIT proposal can be found <a href="IFACWC2026OIT.html">here</a>.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Research Interests -->
+        <section>
+            <h2>Research Interests</h2>
+            
+            <h3>Reliability Verification of AI Algorithms and Neural Networks by Mathematical Systems Theory</h3>
+            <ul>
+                <li>Exact Model Reduction of Feedforward Neural Networks.</li>
+                <li>Lipschitz Constant Computation of Feedforward Neural Networks.</li>
+                <li>Stability Analysis of Recurrent Neural Networks.</li>
+            </ul>
+
+            <h3>Analysis and Synthesis of Dynamical Systems Using Conic Programming</h3>
+            <ul>
+                <li>O'Shea-Zames-Falb Multipliers for Idempotent Nonlinearities.</li>
+                <li>Analysis and Synthesis of Nonlinear Dynamical Systems Using Copositive Programming.</li>
+            </ul>
+
+            <h3>Past Topics</h3>
+            <ul>
+                <li>H2 State-Feedback Synthesis Under Positivity Constraint on the Closed-Loop Systems.</li>
+                <li>Construction of Externally Positive Systems for LTI System Analysis.</li>
+                <li>LMI-based Performance Limitations Analysis of H-infinity Control Systems.</li>
+                <li>Analysis and Synthesis of Positive Systems with Time Delays.</li>
+                <li>Stability and Persistence Analysis of Large-Scale Interconnected Positive Systems.</li>
+                <li>L1-induced Norm Analysis and Synthesis of Positive Systems.</li>
+                <li>Periodic Controller Synthesis for Discrete-Time Systems.</li>
+                <li>Robust SDP/LMI.</li>
+                <li>Linear System Analysis Using the Generalized S-procedure.</li>
+                <li>Stability Analysis of 2-D Systems.</li>
+                <li>Model Reduction for Finite-Dimensional Linear Time-Invariant Systems.</li>
+                <li>Dilated-LMI-based Robust Control System Analysis and Synthesis.</li>
+                <li>Multiobjective Control.</li>
+                <li>Sequential Tuning Methods of LQI Servo Systems.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer-nav">
+        <a href="achievements.html">List of publications and professional activities</a>
+        <a href="index-j.html">Japanese version</a>
+    </footer>
+
+</div>
+
+</body>
+</html>
