@@ -1,65 +1,234 @@
-<BODY  charset="ISO-8859-1" BACKGROUND="JPG/b018.jpg" TEXT=#000000 LINK=#0000ff ALINK=#ffaaaa VLINK=#ff0000> 
-<font face="Times New Roman">
-<font size="4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops Organized/Co-Organized by Ebihara</title>
+  <!-- Modern Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --primary-color: #2e7d32; /* 元の緑色を深みのあるモダンな色に調整 */
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --link-color: #0284c7;
+      --link-hover: #0369a1;
+      --border-color: #e2e8f0;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --radius: 12px;
+    }
 
-<HR>
-<H1><FONT COLOR="green">Workshops Organized/Co-Organized by Ebihara</FONT></H1>
-<FONT COLOR="green">2026</FONT>
-<UL>
-  <LI><A HREF="./WS/Fukuoka2025-4.pdf"><FONT COLOR="blue">
-   February 2026, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)</FONT></A>
- </LI>
-</UL>
-  <p>
-<FONT COLOR="green">2025</FONT>
-<UL>
-  <LI><A HREF="./WS/Fukuoka2025-3.pdf"><FONT COLOR="blue">
-    December 2025, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)</FONT></A>
-  </LI>
-  <p>
-  <LI><A HREF="./WS/Fukuoka2025-2.pdf"><FONT COLOR="blue">
-    November 2025, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)</FONT></A>
-  </LI>
-  <p>
-  <LI><A HREF="./WS/Fukuoka2025-1.pdf"><FONT COLOR="blue">
-    July 2025, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)</FONT></A>
-  </LI>
-</UL>
-  <p>
-<FONT COLOR="green">2023</FONT>
-<UL>
-  <LI><A HREF="./WS/WUDS2023.pdf"><FONT COLOR="blue">
-    June 2023, Workshop on Uncertain Dynamical Systems</FONT></A>
-  </LI>
-  <p>
-  <LI><A HREF="./WS/Fukuoka2023.pdf"><FONT COLOR="blue">
-    June 2023, Seminar on Control Theory at Fukuoka</FONT></A>
-</LI>
-</UL>
-<p>
-<FONT COLOR="green">2018</FONT>
-<UL>
-  <LI><A HREF="./WS/Kyoto2018b.pdf"><FONT COLOR="blue">
-    December 2018, Workshop on Control and Optimization</FONT></A>
-</LI>
-<p>
-  <LI><A HREF="./WS/Kyoto2018a.pdf"><FONT COLOR="blue">
-    March 2018, Workshop on Recent Topics in Control</FONT></A>
-</LI>
-</UL>
-<p>
-<FONT COLOR="green">2015</FONT>
-<UL>
-  <LI><A HREF="./WS/Kyoto2015.pdf"><FONT COLOR="blue">
-    December 2015, Workshop on Recent Topics in Control</FONT></A>
-</LI>
-</UL>
-<p>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
 
-<p>
-<A HREF="index.html"><FONT COLOR="blue">BACK</FONT></A>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
+    header {
+      margin-bottom: 2.5rem;
+      text-align: left;
+    }
 
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      letter-spacing: -0.025em;
+      line-height: 1.3;
+    }
 
+    /* Timeline / Year Section */
+    .year-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
+    .year-section:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+    }
+
+    .year-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .workshop-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .workshop-item {
+      position: relative;
+    }
+
+    .workshop-link {
+      display: inline-block;
+      color: var(--link-color);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.25rem 0;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    .workshop-link:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+      transform: translateX(4px);
+    }
+
+    /* Back Button */
+    .footer-nav {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: all 0.2s ease;
+    }
+
+    .back-button:hover {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border-color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Workshops Organized / Co-Organized by Ebihara</h1>
+    </header>
+
+    <main>
+      <!-- 2026 -->
+      <section class="year-section">
+        <h2 class="year-title">2026</h2>
+        <ul class="workshop-list">
+          <li class="workshop-item">
+            <a href="./WS/Fukuoka2025-4.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              February 2026, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2025 -->
+      <section class="year-section">
+        <h2 class="year-title">2025</h2>
+        <ul class="workshop-list">
+          <li class="workshop-item">
+            <a href="./WS/Fukuoka2025-3.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              December 2025, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)
+            </a>
+          </li>
+          <li class="workshop-item">
+            <a href="./WS/Fukuoka2025-2.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              November 2025, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)
+            </a>
+          </li>
+          <li class="workshop-item">
+            <a href="./WS/Fukuoka2025-1.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              July 2025, Seminar on Control Theory at Fukuoka (partly supported by ASPIRE-CPDS)
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2023 -->
+      <section class="year-section">
+        <h2 class="year-title">2023</h2>
+        <ul class="workshop-list">
+          <li class="workshop-item">
+            <a href="./WS/WUDS2023.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              June 2023, Workshop on Uncertain Dynamical Systems
+            </a>
+          </li>
+          <li class="workshop-item">
+            <a href="./WS/Fukuoka2023.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              June 2023, Seminar on Control Theory at Fukuoka
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2018 -->
+      <section class="year-section">
+        <h2 class="year-title">2018</h2>
+        <ul class="workshop-list">
+          <li class="workshop-item">
+            <a href="./WS/Kyoto2018b.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              December 2018, Workshop on Control and Optimization
+            </a>
+          </li>
+          <li class="workshop-item">
+            <a href="./WS/Kyoto2018a.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              March 2018, Workshop on Recent Topics in Control
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2015 -->
+      <section class="year-section">
+        <h2 class="year-title">2015</h2>
+        <ul class="workshop-list">
+          <li class="workshop-item">
+            <a href="./WS/Kyoto2015.pdf" class="workshop-link" target="_blank" rel="noopener noreferrer">
+              December 2015, Workshop on Recent Topics in Control
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer-nav">
+      <a href="index.html" class="back-button">← BACK</a>
+    </footer>
+  </div>
+
+</body>
+</html>
